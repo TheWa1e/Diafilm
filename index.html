@@ -1,316 +1,548 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <title>Diafilm</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <h1 class="logo">Диафильм.</h1>
-            </div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item active">
-                        <a class="nav-popular" href="#">Главная</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="nav-popular" href="#releases">Релизы</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="nav-popular" href="#popular">Популярное</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="nav-popular" href="#chprs">Часто просматриваемое</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="nav-popular" href="#foru">Для вас</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="profile-container">
-                <img class="profile-picture" src="img/user.png" alt="">
-                <div class="profile-text-container">
-                    <span class="profile-text">Личный кабинет</span>
-                    
-                </div>
-                <div class="toggle">
-                    <i class="fas fa-moon toggle-icon"></i>
-                    <i class="fas fa-sun toggle-icon"></i>
-                    <div class="toggle-ball"></div>
-                </div>
-            </div>
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">Диафильм.</h1>
         </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">
+              <a class="nav-popular" href="#">Главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="nav-popular" href="#releases">Релизы</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="nav-popular" href="#popular">Популярное</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="nav-popular" href="#chprs">Часто просматриваемое</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="nav-popular" href="#foru">Для вас</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="img/user.png" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Личный кабинет</span>
+          </div>
+          <div class="toggle">
+            <i class="fas fa-moon toggle-icon"></i>
+            <i class="fas fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="sidebar">
-        <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
-        <i class="left-menu-icon fas fa-bookmark"></i>
-        <i class="left-menu-icon fas fa-tv"></i>
+      <i class="left-menu-icon fas fa-search"></i>
+      <i class="left-menu-icon fas fa-home"></i>
+      <i class="left-menu-icon fas fa-bookmark"></i>
+      <i class="left-menu-icon fas fa-tv"></i>
     </div>
     <div class="container">
-        <div class="content-container">
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
-                <img class="featured-title" src="img/f-t-1.png" alt="">
-                <p class="featured-desc">Эксцентричный охотник за головами, также известный как «Дантист», 
-                    промышляет отстрелом самых опасных преступников на Диком западе. 
-                    Работенка пыльная, и без надежного помощника ему не обойтись. Но как найти такого и желательно не очень дорогого? 
-                    Беглый раб по имени Джанго – прекрасная кандидатура. 
-                    Правда, у нового помощника свои мотивы – кое с чем надо разобраться...</p>
-                <button onclick="location.href='https://vk.com/video-145832074_456239926'" type="button" class="featured-button" >Смотреть</button>
-            </div>
-            <div class="movie-list-container" id="releases">
-                <h1 class="movie-list-title">Релизы</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Теодор - одинокий писатель, покупает новую техническую разработку,призванную исполнять любое желание. </p>
-                            <button onclick="location.href='https://vk.com/video-162918645_456239972'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
-                            <span class="movie-list-item-title">Star Wars</span>
-                            <p class="movie-list-item-desc">Фильм завершает историю семьи Скайуокеров, 
-                                длящуюся более сорока лет, и обещает дать ответы на все загадки серии.</p>
-                            <button  onclick="location.href='https://vk.com/video-209477587_456241763'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Storm</span>
-                            <p class="movie-list-item-desc">12-летний сын печатника Шторм
-                                 успевает сохранить у себя оригинальную форму для печати листа Лютера и сбегает, избежав ареста.</p>
-                            <button onclick="location.href='https://vk.com/video-22462130_456239095'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">1917</span>
-                            <p class="movie-list-item-desc">6 апреля, разгар Первой мировой, Западный фронт на севере Франции. Британский генерал поручает капралу 
-                                Блэйку смертельно опасную миссию...</p>
-                            <button onclick="location.href='https://vk.com/video-218222949_456239102'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Avengers</span>
-                            <p class="movie-list-item-desc">Локи возвращается, и в этот раз он не один. 
-                                Земля оказывается на грани порабощения, 
-                                и только лучшие из лучших могут спасти человечество.</p>
-                            <button onclick="location.href='https://vk.com/video-209477587_456243315'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button onclick="location.href='---'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button onclick="location.href='---'" class="movie-list-item-button">Смотреть</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container" id='popular'>
-                <h1 class="movie-list-title">Популярное</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
-                <img class="featured-title" src="img/f-t-2.png" alt="">
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
-                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
-                    minima voluptatibus incidunt. Accusamus, provident.</p>
-                <button class="featured-button">WATCH</button>
-            </div>
-            <div class="chprs" id="chprs">
-            <div class="movie-list-container">
-                <h1 class="movie-list-title" >Часто просматриваемое</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
+      <div class="content-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/f-1.jpg');
+          "
+        >
+          <img class="featured-title" src="img/f-t-1.png" alt="" />
+          <p class="featured-desc">
+            Эксцентричный охотник за головами, также известный как «Дантист»,
+            промышляет отстрелом самых опасных преступников на Диком западе.
+            Работенка пыльная, и без надежного помощника ему не обойтись. Но как
+            найти такого и желательно не очень дорогого? Беглый раб по имени
+            Джанго – прекрасная кандидатура. Правда, у нового помощника свои
+            мотивы – кое с чем надо разобраться...
+          </p>
+          <button
+            onclick="location.href='https://vk.com/video-145832074_456239926'"
+            type="button"
+            class="featured-button"
+          >
+            Смотреть
+          </button>
         </div>
-            <div class="movie-list-container" id="foru">
-                <h1 class="movie-list-title">Для вас</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
+        <div class="movie-list-container" id="releases">
+          <h1 class="movie-list-title">Релизы</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Теодор - одинокий писатель, покупает новую техническую
+                  разработку,призванную исполнять любое желание.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-162918645_456239972'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/2.jpeg" alt="" />
+                <span class="movie-list-item-title">Star Wars</span>
+                <p class="movie-list-item-desc">
+                  Фильм завершает историю семьи Скайуокеров, длящуюся более
+                  сорока лет, и обещает дать ответы на все загадки серии.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-209477587_456241763'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/3.jpg" alt="" />
+                <span class="movie-list-item-title">Storm</span>
+                <p class="movie-list-item-desc">
+                  12-летний сын печатника Шторм успевает сохранить у себя
+                  оригинальную форму для печати листа Лютера и сбегает, избежав
+                  ареста.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-22462130_456239095'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/4.jpg" alt="" />
+                <span class="movie-list-item-title">1917</span>
+                <p class="movie-list-item-desc">
+                  6 апреля, разгар Первой мировой, Западный фронт на севере
+                  Франции. Британский генерал поручает капралу Блэйку смертельно
+                  опасную миссию...
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-218222949_456239102'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/5.jpg" alt="" />
+                <span class="movie-list-item-title">Avengers</span>
+                <p class="movie-list-item-desc">
+                  Локи возвращается, и в этот раз он не один. Земля оказывается
+                  на грани порабощения, и только лучшие из лучших могут спасти
+                  человечество.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-209477587_456243315'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/6.jpg" alt="" />
+                <span class="movie-list-item-title">Rampage</span>
+                <p class="movie-list-item-desc">
+                  Вышедший из-под контроля эксперимент Дэвиса Окойи превращает
+                  послушную обезьяну в яростного монстра. Сможет ли Окойи
+                  изобрести антидот, чтобы спасти друга?
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-209477587_456242139'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/7.jpg" alt="" />
+                <span class="movie-list-item-title">Ender's Game</span>
+                <p class="movie-list-item-desc">
+                  Действие происходит в 2135 году. Человечество уже пережило два
+                  вторжения инопланетной расы. Эндрю готовится стать командиром
+                  землян в очередной войне с пришельцами.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-220018529_456240498'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
             </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
         </div>
+        <div class="movie-list-container" id="popular">
+          <h1 class="movie-list-title">Популярное</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/8.jpg" alt="" />
+                <span class="movie-list-item-title">Oblivion</span>
+                <p class="movie-list-item-desc">
+                  Земля, пережившая войну с инопланетными захватчиками,
+                  опустела. Главному герою удаётся спасти лишь одну женщину — и
+                  вскоре он понимает, что это перевернёт его жизнь.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-209477587_456243381'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/9.jpg" alt="" />
+                <span class="movie-list-item-title">Hobbit</span>
+                <p class="movie-list-item-desc">
+                  Хоббит Бильбо Бэггинс пускается в грандиозный поход, целью
+                  которого является отвоевание утраченного королевства гномов
+                  Эребор у дракона Смауга...
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-222774085_456240199'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/10.jpg" alt="" />
+                <span class="movie-list-item-title">Due Dater</span>
+                <p class="movie-list-item-desc">
+                  Питер готовится стать отцом и находится на грани нервного
+                  срыва. Ему предстоит предпринять целое путешествие, чтобы
+                  успеть добраться домой к рождению собственного ребенка.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-209477587_456242301'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/11.jpg" alt="" />
+                <span class="movie-list-item-title">Kick-Ass 2</span>
+                <p class="movie-list-item-desc">
+                  Харизматичный Пипец и гламурная Убивашка обрели новую команду
+                  поддержки во главе с Полковником Америка. Но кроме обычных
+                  мафиози, над городом нависает новая угроза...
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-220018529_456240417'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/12.jpg" alt="" />
+                <span class="movie-list-item-title">Emoji Movie</span>
+                <p class="movie-list-item-desc">
+                  Знаете ли вы, что внутри каждого смартфона есть городок, в
+                  котором живут эмоджи? Каждый из эмоджи отвечает лишь за одну
+                  эмоцию, и только Джин может выражать несколько эмоций сразу.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-220018529_456242367'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/20.jpg" alt="" />
+                <span class="movie-list-item-title">Love, Rosie</span>
+                <p class="movie-list-item-desc">
+                  Рози и Алекс собираются вместе продолжить учёбу в
+                  университете. Однако в их судьбах происходит резкий поворот,
+                  когда Рози узнаёт, что у неё будет ребенок...
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-211760893_456239078'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/21.jpg" alt="" />
+                <span class="movie-list-item-title">Wonka</span>
+                <p class="movie-list-item-desc">
+                  Мечтая открыть магазин в городе, известном своим шоколадом,
+                  молодой и бедный Вилли Вонка обнаруживает, что индустрией
+                  управляет картель жадных шоколатье.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-220018521_456240505'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/f-2.jpg');
+          "
+        >
+          <img class="featured-title" src="img/f-t-2.png" alt="" />
+          <p class="featured-desc">
+            Вернувшись в Испанию, семья юной Регины поселяется в старом
+            величественном особняке, пустовавшем почти 40 лет. Вскоре ее
+            младшему брату начинает казаться, что в стенах их нового дома
+            присутствует что-то страшное.
+          </p>
+          <button
+            onclick="location.href='https://vk.com/video-29787420_171503132'"
+            class="featured-button"
+          >
+            СМОТРЕТЬ
+          </button>
+        </div>
+        <div class="chprs" id="chprs">
+          <div class="movie-list-container">
+            <h1 class="movie-list-title">Часто просматриваемое</h1>
+            <div class="movie-list-wrapper">
+              <div class="movie-list">
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/1.jpeg" alt="" />
+                  <span class="movie-list-item-title">Her</span>
+                  <p class="movie-list-item-desc">
+                    Теодор - одинокий писатель, покупает новую техническую
+                    разработку,призванную исполнять любое желание.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-162918645_456239972'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/2.jpeg" alt="" />
+                  <span class="movie-list-item-title">Star wars</span>
+                  <p class="movie-list-item-desc">
+                    Фильм завершает историю семьи Скайуокеров, длящуюся более
+                    сорока лет, и обещает дать ответы на все загадки серии.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-209477587_456241763'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/15.jpg" alt="" />
+                  <span class="movie-list-item-title"> Batman</span>
+                  <p class="movie-list-item-desc">
+                    После двух лет поисков правосудия на улицах Готэма Бэтмен
+                    становится для горожан олицетворением беспощадного
+                    возмездия.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-184447514_456239863'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/3.jpg" alt="" />
+                  <span class="movie-list-item-title">Storm</span>
+                  <p class="movie-list-item-desc">
+                    12-летний сын печатника Шторм успевает сохранить у себя
+                    оригинальную форму для печати листа Лютера и сбегает,
+                    избежав ареста.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-22462130_456239095'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/4.jpg" alt="" />
+                  <span class="movie-list-item-title">1917</span>
+                  <p class="movie-list-item-desc">
+                    6 апреля, разгар Первой мировой, Западный фронт на севере
+                    Франции. Британский генерал поручает капралу Блэйку
+                    смертельно опасную миссию...
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-218222949_456239102'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/5.jpg" alt="" />
+                  <span class="movie-list-item-title">Avengers</span>
+                  <p class="movie-list-item-desc">
+                    Локи возвращается, и в этот раз он не один. Земля
+                    оказывается на грани порабощения, и только лучшие из лучших
+                    могут спасти человечество.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-209477587_456243315'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/22.jpg" alt="" />
+                  <span class="movie-list-item-title"
+                    >The Wolf of Wall Street</span
+                  >
+                  <p class="movie-list-item-desc">
+                    Восхождение циника-гедониста на бизнес-олимп 1980-х.
+                  </p>
+                  <button
+                    onclick="location.href='https://vk.com/video-211760893_456239030'"
+                    class="movie-list-item-button"
+                  >
+                    Смотреть
+                  </button>
+                </div>
+              </div>
+              <i class="fas fa-chevron-right arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="movie-list-container" id="foru">
+          <h1 class="movie-list-title">Для вас</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/17.jpg" alt="" />
+                <span class="movie-list-item-title">Aquaman</span>
+                <p class="movie-list-item-desc">
+                  История получеловека-полуатланта Артура Карри, которому
+                  предстоит выяснить, достоин ли он быть тем, кем ему суждено по
+                  рождению — царём подводного мира.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-222609266_456240670'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/18.jpg" alt="" />
+                <span class="movie-list-item-title">Салют-7</span>
+                <p class="movie-list-item-desc">
+                  Космонавты должны предотвратить падение орбитальной станции.
+                  Владимир Вдовиченков в драме о реальном подвиге
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-69606939_456239209'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/19.jpg" alt="" />
+                <span class="movie-list-item-title">Человек-паук</span>
+                <p class="movie-list-item-desc">
+                  После встречи с командой Мстителей Питер Паркер возвращается
+                  домой и пытается жить обычной жизнью под опекой тёти Мэй. Но
+                  теперь за Питером приглядывает кое-кто ещё...
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-217081635_456240066'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/7.jpg" alt="" />
+                <span class="movie-list-item-title">Ender's Game</span>
+                <p class="movie-list-item-desc">
+                  Действие происходит в 2135 году. Человечество уже пережило два
+                  вторжения инопланетной расы. Эндрю готовится стать командиром
+                  землян в очередной войне с пришельцами.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-220018529_456240498'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/23.jpg" alt="" />
+                <span class="movie-list-item-title">Лулу и Бриггс</span>
+                <p class="movie-list-item-desc">
+                  Бывший солдат и пес едут на похороны друга. Трогательное
+                  роуд-муви, режиссерский дебют Ченнинга Татума.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-208081064_456239365'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/24.jpg" alt="" />
+                <span class="movie-list-item-title"
+                  >Мулан:рождение легенды</span
+                >
+                <p class="movie-list-item-desc">
+                  Храбрая и отважная красавица Мулан — дочь опытного китайского
+                  воина. Во время, когда армия врагов вторгается на границу,
+                  Мулан ждёт множество испытаний.
+                </p>
+                <button
+                  onclick="location.href='https://vk.com/video-203654344_456240079'"
+                  class="movie-list-item-button"
+                >
+                  Смотреть
+                </button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

@@ -66,32 +66,6 @@ body {
   object-fit: cover;
 }
 
-.toggle {
-  width: 40px;
-  height: 20px;
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-
-.toggle-icon {
-  color: goldenrod;
-}
-
-.toggle-ball {
-  width: 18px;
-  height: 18px;
-  background-color: black;
-  position: absolute;
-  right: 1px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 1s ease all;
-}
-
 .sidebar {
   width: 50px;
   height: 100%;
@@ -168,10 +142,11 @@ body {
   position: relative;
 }
 
-.movie-list-item:hover .movie-list-item-img {
+.movie-list-item:hover .movie-list-item-block {
   transform: scale(1.2);
   margin: 0 30px;
   opacity: 0.5;
+  transition: all 1s ease-in-out;
 }
 
 .movie-list-item:hover .movie-list-item-title,
@@ -180,12 +155,23 @@ body {
   opacity: 1;
 }
 
-.movie-list-item-img {
-  transition: all 1s ease-in-out;
+.movie-list-item-block img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-list-item-block {
+  transition: all 1.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items:center;
   width: 270px;
   height: 200px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 20px;
+
 }
 
 .movie-list-item-title {
@@ -259,14 +245,7 @@ body {
     color: black;
 }
 
-.toggle.active{
-    background-color: black;
-}
 
-.toggle-ball.active{
-    background-color: white;
-    transform: translateX(-20px);
-}
 
 .nav-popular{
   color: white;
